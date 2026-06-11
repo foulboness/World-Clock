@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Nevermore Time Atlas</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+  <!-- Moment -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.45/moment-timezone-with-data.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="fog"></div>
+
+  <div class="container">
+    <header>
+      <h1>NEVERMORE TIME ATLAS</h1>
+      <p>Time moves differently within these walls.</p>
+    </header>
+
+    <div class="selector">
+      <label for="city">Choose a city</label>
+      <select id="city">
+        <option value="">Select a city...</option>
+        <option value="current">My current timezone</option>
+        <option value="Europe/London">London</option>
+        <option value="America/New_York">New York</option>
+        <option value="Asia/Seoul">Seoul</option>
+        <option value="Asia/Kolkata">Kolkata</option>
+      </select>
+    </div>
+
+ <div id="cities">
+    <div class="city" id="los-angeles">
+        <div>
+        <h2>Los Angeles</h2>
+        <div class="date"></div>
+    </div>
+        <div class="time"></div>
+    </div>
+    <div class="city" id="paris">
+        <div>
+        <h2>Paris</h2>
+        <div class="date">August</div>
+    </div>
+        <div class="time">1:48:15 <small>AM</small></div>
+    </div>
+  </div>
+    <div>
+
+
+    <footer>
+      <p>coded by sky • 2026 • ♥</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

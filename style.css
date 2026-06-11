@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background-image: url(https://i1-c.pinimg.com/1200x/9e/3c/60/9e3c60e644b3e276a54cde02c5ea60e0.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    font-family: "Cinzel", serif;
+    color: #e8e8e8;
+}
+
+/* dark fog overlay (Wednesday mood layer) */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(
+        circle at top,
+        rgba(10, 10, 15, 0.55),
+        rgba(0, 0, 0, 0.85)
+    );
+    z-index: -1;
+}
+
+/* MAIN CONTAINER */
+.container {
+    max-width: 720px;
+    margin: 70px auto;
+    padding: 32px;
+
+    background: rgba(12, 12, 18, 0.85);
+    border: 1px solid rgba(180, 180, 180, 0.12);
+    border-radius: 14px;
+
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.8);
+}
+
+/* TITLE */
+h1 {
+    text-align: center;
+    font-size: 54px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-family: "Cinzel", serif;
+    color: #f2f2f2;
+    text-transform: uppercase;
+}
+
+/* SUBTEXT */
+p {
+    text-align: center;
+    font-size: 16px;
+    opacity: 0.7;
+    letter-spacing: 1px;
+}
+
+/* SELECT DROPDOWN */
+select {
+    padding: 12px;
+    margin: 20px 0;
+    width: 100%;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-family: "Cormorant Garamond", serif;
+
+    background: rgba(0, 0, 0, 0.6);
+    color: #eaeaea;
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    outline: none;
+}
+
+/* CITY ROW */
+.city {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 24px 10px;
+    margin: 18px 0;
+ border-bottom: 1px dashed rgba(0, 0, 0, 0.7);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    gap: 20px;
+}
+
+
+
+/* CITY NAME */
+h2 {
+    margin: 0;
+    font-size: 30px;
+    letter-spacing: 1px;
+     font-family: "Cinzel", serif;
+}
+
+.date {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.55;
+}
+
+.time {
+    font-size: 42px;
+    font-weight: 300;
+    text-align: right;
+    min-width: 140px;
+}
+
+.time small {
+    font-size: 18px;
+    opacity: 0.6;
+}
+
+/* BACK LINK */
+.back-link {
+    color: #b572e2;
+    font-size: 16px;
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+.back-link:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+/* ICON */
+ion-icon {
+    font-size: 18px;
+    opacity: 0.6;
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        margin: 20px 12px;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 36px;
+        letter-spacing: 1px;
+    }
+
+    .city {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .time {
+        font-size: 34px;
+        text-align: left;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .date {
+        font-size: 14px;
+    }
+
+    select {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
