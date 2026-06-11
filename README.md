@@ -12,12 +12,10 @@ A simple and elegant world clock application that displays the current time acro
 - Mobile-friendly interface
 - Clean UI
 
-## Built With
-
-- HTML5
-- CSS3
-- JavaScript (Vanilla JS)
-- Intl.DateTimeFormat API
+## Technologies Used
+- HTML5: Structure of the web application.
+- CSS3: Styling of the web application.
+- JavaScript: Dynamic behavior and time updates.
 
 ## Open the Project
 
